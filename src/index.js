@@ -35,11 +35,8 @@ document.querySelector('#verify-button')
 // Your code--modify Blockchain
 
 Blockchain.prototype.serialize = function() {
-  var results = this.chain;
-  var formatted = results.map(function(obj){
-    return obj.block;
-  });
- return JSON.stringify(formatted);
+  var formatted = this.chain.map(function(obj){ return obj.block; });
+  return JSON.stringify(formatted);
 }
 console.log(chain.serialize());
 
