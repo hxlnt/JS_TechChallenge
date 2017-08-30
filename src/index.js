@@ -49,6 +49,7 @@ Blockchain.prototype.verify = function() {
       return res.json();
   }).then(function(json) {
       console.log(json);
+      return json.result;
   });
 }
 
